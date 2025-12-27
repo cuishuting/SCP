@@ -1,8 +1,22 @@
-# Preliminaries:
+# LLM-enhanced Career Knowledge Graph Understanding for Job Mobility Prediction
+
+This repository provides the official implementation for the paper: **“LLM-enhanced Career Knowledge Graph Understanding for Job Mobility Prediction”**.
+
+---
+
+## Framework Overview
+
+The overall pipeline of our proposed framework is illustrated below. 
+
+![Framework Overview](figs/whole_pipeline.pdf)
+
+---
+
+## Preliminaries:
 * Python version: Python 3.11.9
 * Required packages: Specified in requirements.txt
 
-# Step1:  MMP-GAT pre-training for graph-modal embeddings
+## Step1:  MMP-GAT pre-training for graph-modal embeddings
 
 * Run the following command to pre-train MMP-GAT and obtain graph-modal node embeddings. The best checkpoint will be automatically saved under the directory: ./Multi_HAN_results/, with the following filename format: early_stop_cp\_{seed}\_{date}\_{hour}\_{minute}\_{second}_{dataset}.pth
 
@@ -17,7 +31,7 @@ python GNNplus_for_node_emb.py \
 
 
 
-# Step2: Train & Evaluate SCP 
+## Step2: Train & Evaluate SCP 
 
 * Run the following command to train and evaluate SCP.
 
@@ -46,7 +60,7 @@ python GNNplus_for_node_emb.py \
 
   
 
-# Dataset Description
+## Dataset Description
 
 Due to privacy and legal constraints, we are unable to publicly release the original LinkedIn user data used in our experiments. The dataset contains sensitive personal career trajectories and educational histories collected from a professional networking platform. To facilitate reproducibility and understanding of the data structure, we provide anonymized schema descriptions and illustrative examples below, which reflect the exact format and semantics of the data used in our experiments.
 
