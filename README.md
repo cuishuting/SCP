@@ -8,7 +8,7 @@ This repository provides the official implementation for the paper: **“LLM-enh
 
 The overall pipeline of our proposed framework is illustrated below. 
 
-![Framework Overview](figs/whole_pipeline.pdf)
+![Framework Overview](figs/SCP_pipeline.png)
 
 ---
 
